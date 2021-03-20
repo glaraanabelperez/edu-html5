@@ -276,7 +276,6 @@ div .web a i:hover{
     display: flex;
     flex-direction: column;
     padding: 1%;
-    width: 50%;
     align-items: center;
     text-align:center;
     justify-content: center;
