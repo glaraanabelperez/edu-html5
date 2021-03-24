@@ -1,2 +1,2 @@
 # pagEducativaEjemplo
-https://glaraanabelperez.github.io/pagEducativaEjemplo/
+https://glaraanabelperez.github.io/pagEducativaEjemplo-html-css/
