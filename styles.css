@@ -13,10 +13,12 @@ a{
 }
 body{
     background-color:rgb(247, 246, 243);
+    margin: 3%;
+
 }
 .base{
     background-color: white;
-    margin: 2%;
+    padding: 4%;
 }
 .directorio{
     font-size: 1em;
@@ -41,7 +43,6 @@ h2{
 }
 h3{
     font-size: 1.5em;
-    writing-mode: vertical-rl;
     margin: 1%;
     color: rgb(3, 3, 3);
 }
@@ -62,12 +63,13 @@ h6{
     font-size: 1.9em;
     text-align: center;
     padding: 3px 10px 3px 10px;
-    background-color: #FFE800;
+    background-color: #e5ff00;
     border-radius: 62px;
     width: 60%;
 }
 p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: rgb(5, 5, 5);
 }
 /*MENU oculto y responsive*/
@@ -120,26 +122,32 @@ div .web a i:hover{
         flex-direction: row;
         right: 0px;        
         top: 25px;
-        background-color: #FFE800;
+        background-color: #e5ff00;
         border-radius: 20px;
 }
 .web i{
     font-size: 30px;  
     margin-right: 5px;
 }
-.contenedor{
-    display: flex;
-    flex-direction: row;
-}
+
 .logo {
-    width: 100%;
     margin: 5% 5% 5% 5%;
-    }
+    position: fixed;
+    bottom: 1%;
+    left: 0%;
+    width: 20%;
+}
+
 .logo img{
-    height: 60%;
     display: block;
     margin: 5% 5% 5% 5%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
+.img-presentenacion{
+    background-size: contain;
+}
+
 /*CABECERA--------------BOTONERA PRINCIPAL*/
 #frase {
     width: 100%;
@@ -164,7 +172,7 @@ div .web a i:hover{
         background-color:rgb(3, 3, 3) ;
     }
     .btnJardin{
-        background-color:#FFE800 ;
+        background-color:#e5ff00;
     }
     .btnJardin:hover{
         background-color:rgb(7, 7, 7) ;
@@ -266,45 +274,56 @@ div .web a i:hover{
     text-align:center;
     justify-content: center;
 }
-.imagen-historia{
-    background-image: url(imagenes/historia.jpg);
-    background-size: cover;
-    width: 50%;
-    height: 80%;
-}
+
 .cuerpo{
     display: flex;
     flex-direction: column;
-    padding: 1%;
     align-items: center;
     text-align:center;
     justify-content: center;
 }
 /* SECCION NOVEDADES-----------------------------------------------------------------------------*/
-.novedades{
-    height: 40vh;
-}
 .presenta{
-    padding: 1%;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align:center;
     justify-content: center;
-    height: 50%;
 }
-.video{
+
+.parrafos-row{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 5%;
+}
+.parrafos-row p{
     width: 50%;
+    text-align: left;
+}
+.parrafos-row .video{
+    margin: auto;
+}
+
+.video{
     padding-top: 3%;
 }
+.p-novedaddes{
+    width: 50%;
+}
+
+.imagen-tic{
+    background-color: aquamarine; width: 38%; margin-left:7%; text-align: center; padding: 1%; border-top-right-radius: 40px; border-bottom-right-radius: 40px;
+}
+/* SECCION sitio para chicos-----------------------------------------------------------------------------*/
+
 .sitios{
     display: flex;
     flex-direction: row;
     width: 50%;
-    align-items: center;
-    text-align:center;
-    justify-content: center;
+    margin: auto;
     height: 50vh;
+    margin-left: 10%;
 }
 .sitio1{
     margin: 1%;
@@ -312,8 +331,8 @@ div .web a i:hover{
     border-radius: 100%;
     background-size: cover;
     border-radius: 100%;
-    width: 20%;
-    height: 35%;
+    width: 170px;
+    height: 170px;
 }
 .sitio2{
     margin: 1%;
@@ -321,8 +340,8 @@ div .web a i:hover{
     border-radius: 100%;
     background-size: cover;
     border-radius: 100%;
-    width: 20%;
-    height: 35%;
+    width: 220px;
+    height: 220px;
 }
 .sitio3{
     margin: 1%;
@@ -330,8 +349,8 @@ div .web a i:hover{
     border-radius: 100%;
     background-size: cover;
     border-radius: 100%;
-    width: 20%;
-    height: 35%;
+    width: 190px;
+    height: 190px;
 }
 
 
@@ -351,7 +370,6 @@ border-radius: 20px;
 margin-top: 5%;
 }
 .texto1-slider{
-    width: 20%;
     display: flex;
     flex-direction: column;
     padding: 1%;
@@ -457,47 +475,14 @@ ul li{
     }
 .slider-4{
     transition: 1s;
-    background-image:url(imagenes/slider/slider4.jpg) ;
+    background-image:url(imagenes/slider/banderin.jpg) ;
     background-size: cover;
     }
 
 
 
     /*footer----------------------------------------------------------------------------*/
-footer{
-    height: 95vh;
-}
-    .footer-cont{
-    background-color:whitesmoke;
-    display: flex;
-    flex-direction: row;
-}
-.pfooter{
-    text-align: left;
-}
-    .footer-div{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        border-top: 10px solid whitesmoke;
-        border-bottom: 10px solid whitesmoke;
-        text-align: left;
-        padding-left: 2%;
-    }
-    div input{
-        border: 0px;
-        height: 40px;
-    }
-    .input{
-        width: 35%;
-        text-align: center;
-        padding-left: 2%;
-        margin-left: 2%;
-        position: relative;
-        right: 30px;
-        top: 230px;
-    }
+
 
     /*-----------------------------------------------------------------------------*/
     
@@ -505,7 +490,18 @@ footer{
 @media (min-width: 300px) and (max-width: 980px){
     *{
         font-size: 14px;
-        padding: 2%;
+        text-align: left;
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgb(5, 5, 5);
+    }
+    h2{
+        width: 99%;
+        text-align: left;
+    }
+    h3{
         text-align: left;
     }
     .base{
@@ -517,14 +513,13 @@ footer{
     /*--------------------------------------------------general*/
    
     .contenedor{
-        width: 30%;
-    }
-    .logo {
         width: 100%;
-        }
-    .logo img{
-        width: 100%;
+        padding: 0% !important;
     }
+    .base{
+        padding: 0% !important;
+    }
+    
     .web{
         left: 500px;
     }
@@ -572,17 +567,25 @@ footer{
         text-align:center;
         justify-content: center;
     }
-    .imagen-historia{
-        background-image: url(imagenes/historia.jpg);
-        width: 100%;
-        height: 400px;
-    }
-    h2{
-        text-align: left;
-    }
+
+   
     .cuerpo{
         width: 90%;
     }
+
+    .parrafos-row{
+        display: block !important;
+        text-align: left;
+        margin-top: 5%;
+    }
+    .parrafos-row p{
+        width: 80%;
+        text-align: left;
+    }
+    .p-novedaddes{
+        width: 100%;
+    }
+
         /*-------------------------------------------------------*/
         .novedades{
             height: auto;
@@ -602,14 +605,21 @@ footer{
             width: 100%;
             height: 500px;
         }
-        .sitios{
+
+        .imagen-tic{
+            width: 100%; margin-top:5%;margin-left: 0% !important; 
+        }
+        
+        /*-------------------------------------------------------*/
+
+        div .sitios{
             display: flex;
             flex-direction: row;
             width: 100%;
             align-items: center;
             text-align:center;
             justify-content: center;
-            height: 400px;
+            height: 250px;
         }
         
         
@@ -630,20 +640,22 @@ footer{
         border-radius: 20px;
         margin-top: 5%;
         }
-        .texto1-slider{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+
+        .cuerpo-slider{
+            margin-bottom: 10%;
         }
-        .banderin{
-            display: none;
+        .cuerpo-slider i{
+            margin-top: 5%;
         }
-        .texto1-slider{
-            width: 100%;
-            text-align:left;
-            margin-top: 5%;        
+        .imagen-arte{
+            width: 250px;
+            height: 250px;
         }
+        .imagen-natacion{
+            width: 250px;
+            height: 250px;
+        }
+    
         .texto2-slider{
             width: 100%;
             text-align:left;
@@ -655,13 +667,13 @@ footer{
             text-align:left;
         }
         #contenedor-slider{
-            display: none;
             margin-right: 1%;
             text-align: center;
-            width: max-content;
+            width: 100%;
+            height: 100%;
             margin:1%;
-            margin-left: 42%;
-            border-radius: 100%;
+            background-size: cover;
+            margin-bottom: 5%;
         }
      
         .lista-slider {
