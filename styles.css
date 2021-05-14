@@ -77,11 +77,10 @@ p{
     display: block !important;
 }
 #botonera-lateral{
-    display: none;
     width: 15%;
     position: fixed;
     top: 100px;
-    right: 70px;
+    right: 35px;
     background-color: white;
     border-radius: 20px;
 }
@@ -133,8 +132,8 @@ div .web a i:hover{
 .logo {
     margin: 5% 5% 5% 5%;
     position: fixed;
-    bottom: 1%;
-    left: 0%;
+    left: 2%;
+    top: 15%;
     width: 20%;
 }
 
@@ -245,25 +244,6 @@ div .web a i:hover{
     flex-direction: row;
 }
 
-/* FIN BOTONERA SECUNDARIA!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.lineaamarilla{
-    background-color:#FFE800;
-    height: 3px; 
-    border: 0;	
-    }
-
-.lineaverde{
-        background-color:rgb(20, 155, 38);
-        height: 3px; 
-        border: 0;	
-        }
-
-.lineaazul{
-            background-color:#24305E;
-            height: 3px; 
-            border: 0;	
-            }
 /* MAIN HISTORIA-----------------------------------------------------------------------------*/
 .historia{
     height: 100vh;
@@ -283,37 +263,19 @@ div .web a i:hover{
     justify-content: center;
 }
 /* SECCION NOVEDADES-----------------------------------------------------------------------------*/
-.presenta{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align:center;
-    justify-content: center;
-}
-
 .parrafos-row{
     display: flex;
     flex-direction: row;
-    text-align: left;
-    margin-top: 5%;
 }
 .parrafos-row p{
     width: 50%;
     text-align: left;
+    padding: 5% 3% 5% 3%;
 }
-.parrafos-row .video{
-    margin: auto;
-}
-
-.video{
-    padding-top: 3%;
-}
-.p-novedaddes{
-    width: 50%;
-}
-
 .imagen-tic{
-    background-color: aquamarine; width: 38%; margin-left:7%; text-align: center; padding: 1%; border-top-right-radius: 40px; border-bottom-right-radius: 40px;
+    width: 50%;
+    margin: 5% 3% 5% 3%;
+
 }
 /* SECCION sitio para chicos-----------------------------------------------------------------------------*/
 
@@ -479,11 +441,6 @@ ul li{
     background-size: cover;
     }
 
-
-
-    /*footer----------------------------------------------------------------------------*/
-
-
     /*-----------------------------------------------------------------------------*/
     
 
@@ -529,7 +486,10 @@ ul li{
     }
     #frase {
         display: none;
-        }
+    }
+    h3{
+        width: 100%;
+    }
     /*---------------------------------------------------botonera responsive*/
     #botonera-lateral{
         display: none;
@@ -539,6 +499,7 @@ ul li{
         right: 90px;
         background-color: white;
         border-radius: 20px;
+        z-index: 999;
     }
     #btnPrincipal{
         font-size: 2.3rem;
@@ -558,140 +519,110 @@ ul li{
         display: none;
     }
     /*-------------------------------------------------------*/
-    .historia{
-        height: 100%;
+    
+    .presenta{
         padding: 1%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align:center;
-        justify-content: center;
+        text-align:left;
+        height: auto;
     }
-
-   
     .cuerpo{
         width: 90%;
+        margin: auto;
     }
-
     .parrafos-row{
         display: block !important;
-        text-align: left;
         margin-top: 5%;
     }
     .parrafos-row p{
-        width: 80%;
+        width: 100%;
         text-align: left;
+        margin: auto;
+        padding: 1% !important;
     }
     .p-novedaddes{
         width: 100%;
     }
-
-        /*-------------------------------------------------------*/
-        .novedades{
-            height: auto;
-        }
-        .presenta{
-            padding: 1%;
-            display: flex;
-            flex-direction: column;
-            text-align:left;
-            height: auto;
-        }
-        .video{
-            width: 90%;
-            padding-top: 3%;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-        }
-
-        .imagen-tic{
-            width: 100%; margin-top:5%;margin-left: 0% !important; 
-        }
-        
-        /*-------------------------------------------------------*/
-
-        div .sitios{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            align-items: center;
-            text-align:center;
-            justify-content: center;
-            height: 250px;
-        }
-        
-        
-        /* SLIDER LARA--------------------------------------------------------------------------*/
-        .slider{
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            padding: 3%;
-            margin: 0% !important;
-        }
-        .slider p{
-            text-transform: uppercase;
-        }
-        .slider i{
-        background-color: rgb(252, 240, 111);
-        padding: 3%;
-        border-radius: 20px;
-        margin-top: 5%;
-        }
-
-        .cuerpo-slider{
-            margin-bottom: 10%;
-        }
-        .cuerpo-slider i{
-            margin-top: 5%;
-        }
-        .imagen-arte{
-            width: 250px;
-            height: 250px;
-        }
-        .imagen-natacion{
-            width: 250px;
-            height: 250px;
-        }
-    
-        .texto2-slider{
-            width: 100%;
-            text-align:left;
-            margin-top: 5%;
-        }
-
-        .texto3-slider{
-            width: 100%;
-            text-align:left;
-        }
-        #contenedor-slider{
-            margin-right: 1%;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            margin:1%;
-            background-size: cover;
-            margin-bottom: 5%;
-        }
-     
-        .lista-slider {
-            width: 100px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .slider li i{
-            border-radius: 0px;
-            padding: 1px;
-            color: yellow;
-        }
-        ul li{
-            cursor: pointer;
-            list-style: none;
-        } 
-        
-        
+    .imagen-tic{
+        width: 100%;
     }
+        /*-------------------------------------------------------*/
+    div .sitios{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+        height: 250px;
+    }
+    /* SLIDER LARA--------------------------------------------------------------------------*/
+    .slider{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        padding: 3%;
+        margin: 0% !important;
+    }
+    .slider p{
+        text-transform: uppercase;
+    }
+    .slider i{
+    background-color: rgb(252, 240, 111);
+    padding: 3%;
+    border-radius: 20px;
+    margin-top: 5%;
+    }
+    .cuerpo-slider{
+        margin-bottom: 10%;
+    }
+    .cuerpo-slider i{
+        margin-top: 5%;
+    }
+    .imagen-arte{
+        width: 250px;
+        height: 250px;
+    }
+    .imagen-natacion{
+        width: 250px;
+        height: 250px;
+    }
+
+    .texto2-slider{
+        width: 100%;
+        text-align:left;
+        margin-top: 5%;
+    }
+    .texto3-slider{
+        width: 100%;
+        text-align:left;
+    }
+    #contenedor-slider{
+        margin-right: 1%;
+        text-align: center;
+        width: 100%;
+        margin:1%;
+        background-size: cover;
+        margin-bottom: 5%;
+    }
+    
+    .lista-slider {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .slider li i{
+        border-radius: 0px;
+        padding: 1px;
+        color: yellow;
+    }
+    ul li{
+        cursor: pointer;
+        list-style: none;
+    } 
+
+}
 
