@@ -1,2 +1,2 @@
 # Prueba Pagina simple Jardin
-https://glaraanabelperez.github.io/pagEducativaEjemplo-html-css/
+https://glaraanabelperez.github.io/pagina-edu-html5/
